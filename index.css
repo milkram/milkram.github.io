@@ -240,7 +240,7 @@ body {
 }
 
 /* SECTION 2: FLAVOR */
-.flavor {
+/* .flavor {
   background-color: #DEAE26;
   padding-top: 1.625rem;
   padding-bottom: 1.625rem;
@@ -329,16 +329,17 @@ body {
     font-size: 2rem;
     padding: 0 7rem 0 7rem;
   }
-}
+} */
 
-/* SECTION 3: IDEA */
-.idea {
+/* SECTION 3: FLAVOR */
+.flavor {
   padding-top: 1.625rem;
   padding-bottom: 2.5rem;
   text-align: center;
 }
 
-.idea h1 {
+.flavor h1 {
+  display: inline-block;
   font-size: 0.6rem;
   font-weight: bold;
   font-style: normal;
@@ -346,10 +347,14 @@ body {
   line-height: 4.9;
   letter-spacing: 0.1125rem;
   color: #18181d;
-  margin: 0 0 1.375rem 0;
+  margin: 4.2rem 0 1.375rem 0;
+  background-image: url(assets/fill-1.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 58%;
 }
 
-.idea p {
+.flavor p {
   font-family: Georgia;
   font-size: 1.2rem;
   font-weight: normal;
@@ -363,22 +368,22 @@ body {
   margin-bottom: 4.1rem;
 }
 
-.idea hr {
+.flavor hr {
   border: solid 2px #18181d;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
 
 @media (min-width: 425px) {
-  .idea {
+  .flavor {
     padding-top: 2.625rem;
     padding-bottom: 2.5rem;
   }
-  .idea h1 {
+  .flavor h1 {
     font-size: 0.75rem;
-    margin: 0 0 1.075rem 0;
+    margin: 4.4rem 0 1.075rem 0;
   }
-  .idea p {
+  .flavor p {
     font-size: 1.4rem;
     padding: 0 2.2rem 0 2.2rem;
     margin-bottom: 4.7rem;
@@ -386,15 +391,15 @@ body {
 }
 
 @media (min-width: 768px) {
-  .idea {
+  .flavor {
     padding-top: 3.625rem;
     padding-bottom: 2.5rem;
   }
-  .idea h1 {
+  .flavor h1 {
     font-size: 0.9rem;
-    margin: 0 0 1.175rem 0;
+    margin: 4.6rem 0 1.175rem 0;
   }
-  .idea p {
+  .flavor p {
     font-size: 1.6rem;
     padding: 0 3.8rem 0 3.8rem;
     margin-bottom: 5.3rem;
@@ -402,15 +407,15 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .idea {
+  .flavor {
     padding-top: 4.625rem;
     padding-bottom: 2.5rem;
   }
-  .idea h1 {
+  .flavor h1 {
     font-size: 1.05rem;
-    margin: 0 0 1.275rem 0;
+    margin: 4.8rem 0 1.275rem 0;
   }
-  .idea p {
+  .flavor p {
     font-size: 1.8rem;
     padding: 0 5.4rem 0 5.4rem;
     margin-bottom: 5.9rem;
@@ -418,16 +423,15 @@ body {
 }
 
 @media (min-width: 1440px) {
-  .idea {
+  .flavor {
     padding-top: 5.625rem;
     padding-bottom: 2.5rem;
   }
-  .idea h1 {
+  .flavor h1 {
     font-size: 1.2rem;
-    margin: 0 0 1.375rem 0;
-    margin-bottom: 6.5rem;
+    margin: 5rem 0 1rem 0;
   }
-  .idea p {
+  .flavor p {
     font-size: 2rem;
     padding: 0 7rem 0 7rem;
     margin-bottom: 6.5rem;
@@ -442,6 +446,7 @@ body {
 }
 
 .gallery h1 {
+  display: inline-block;
   font-size: 0.8rem;
   font-weight: bold;
   font-style: normal;
@@ -450,6 +455,10 @@ body {
   letter-spacing: 0.1125rem;
   color: #18181d;
   margin: 0 0 2.75rem 0;
+  background-image: url(assets/fill-1.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 58%;
 }
 
 .gallery > div img {
