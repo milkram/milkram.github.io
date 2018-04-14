@@ -1,0 +1,609 @@
+html {
+  font-size: 16px;
+  font-family: Futura;
+}
+
+body > section {
+  padding: 1.2rem 0.4rem 0 0.4rem;
+}
+
+@media (min-width: 425px) {
+  body > section {
+    padding: 1.4rem 1.8rem 0 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body > section {
+    padding: 1.6rem 3.2rem 0 3.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body > section {
+    padding: 1.8rem 4.6rem 0 4.6rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  body > section {
+    padding: 2rem 6rem 0 6rem;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+/* SECTION 0: NAV */
+.nav img {
+  width: 6.125rem;
+}
+
+@media (min-width: 768px) {
+  .nav img {
+    width: 7.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav img {
+    width: 8.125rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav img {
+    width: 9.125rem;
+  }
+}
+
+/* SECTION 1: HERO */
+.hero {
+  background-color: white;
+}
+
+.hero div {
+  padding-bottom: 3.75rem;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "description"
+    "image"
+    "buy"
+    "availability"
+}
+
+.hero img {
+  grid-area: image;
+  width: 100%;
+}
+
+.hero span {
+  grid-area: availability;
+}
+
+.hero h3 {
+  font-size: 0.575rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.1875rem;
+  text-align: left;
+  border: solid 0.125rem #000000;
+  color: #000000;
+  padding: 0.325rem 1.325rem 0.325rem 1.325rem;
+  margin: 0;
+  display: inline-block;
+}
+
+.hero h1 {
+  grid-area: title;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18181D;
+}
+
+.hero h2 {
+  grid-area: description;
+  font-family: Georgia;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding-right: 1.75rem;
+}
+
+.hero a {
+  grid-area: buy;
+}
+
+.hero p {
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.1875rem;
+  text-align: left;
+  color: #2E2E2E;
+  margin: 0;
+  background-color: #DEAE26;
+  padding: 0.725rem 1.9375rem 0.725rem 1.9375rem;
+  display: inline-block;
+}
+
+@media (min-width: 425px){
+  .hero p {
+    font-size: 0.875rem;
+    padding: 0.825rem 2.9375rem 0.825rem 2.9375rem;
+  }
+}
+
+@media (min-width: 768px){
+  .hero div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(0%, auto) auto auto auto auto minmax(0%, auto);
+    grid-template-areas:
+      ". image"
+      "availability image"
+      "title image"
+      "description image"
+      "buy image"
+      ". image";
+    grid-column-gap: 1.0rem;
+    padding-bottom: 5.75rem;
+  }
+
+  .hero h1 {
+    margin: 1.75rem 0 1.75rem 0;
+  }
+
+  .hero h3 {
+    font-size: 0.675rem;
+    padding: 0.425rem 1.425rem 0.425rem 1.425rem;
+  }
+
+  .hero h2 {
+    font-size: 1.0rem;
+    padding-right: 2.75rem;
+    margin: 0 0 3.4375rem 0;
+  }
+  .hero p {
+    font-size: 0.875rem;
+    padding: 0.925rem 3.9375rem 0.925rem 3.9375rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .hero div {
+    grid-column-gap: 1.5rem;
+    padding-bottom: 6.75rem;
+  }
+
+  .hero h3 {
+    font-size: 0.775rem;
+    padding: 0.525rem 1.525rem 0.525rem 1.525rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+    padding-right: 4.75rem;
+  }
+
+  .hero p {
+    font-size: 0.875rem;
+    padding: 1.025rem 4.9375rem 1.025rem 4.9375rem;
+  }
+}
+
+@media (min-width: 1440px){
+  .hero div {
+    grid-column-gap: 2rem;
+    padding-bottom: 7.75rem;
+  }
+
+  .hero h3 {
+    font-size: 0.875rem;
+    padding: 0.625rem 1.625rem 0.625rem 1.625rem;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+    padding-right: 6.75rem;
+  }
+  .hero p {
+    font-size: 0.875rem;
+    padding: 1.125rem 5.9375rem 1.125rem 5.9375rem;
+  }
+  .hero img {
+    width: 100%;
+  }
+}
+
+/* SECTION 2: FLAVOR */
+.flavor {
+  background-color: #DEAE26;
+  padding-top: 1.625rem;
+  padding-bottom: 1.625rem;
+  text-align: center;
+}
+
+.flavor h1 {
+  font-size: 0.6rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 4.9;
+  letter-spacing: 0.1125rem;
+  color: #18181d;
+  margin: 0 0 0.975rem 0;
+}
+
+.flavor p {
+  font-family: Georgia;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  padding: 0 0.6rem 0 0.6rem;
+}
+
+@media (min-width: 425px) {
+  .flavor {
+    padding-top: 2.625rem;
+    padding-bottom: 2.625rem;
+  }
+  .flavor h1 {
+    font-size: 0.75rem;
+    margin: 0 0 1.075rem 0;
+  }
+  .flavor p {
+    font-size: 1.4rem;
+    padding: 0 2.2rem 0 2.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .flavor {
+    padding-top: 3.625rem;
+    padding-bottom: 3.625rem;
+  }
+  .flavor h1 {
+    font-size: 0.9rem;
+    margin: 0 0 1.175rem 0;
+  }
+  .flavor p {
+    font-size: 1.6rem;
+    padding: 0 3.8rem 0 3.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flavor {
+    padding-top: 4.625rem;
+    padding-bottom: 4.625rem;
+  }
+  .flavor h1 {
+    font-size: 1.05rem;
+    margin: 0 0 1.275rem 0;
+  }
+  .flavor p {
+    font-size: 1.8rem;
+    padding: 0 5.4rem 0 5.4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .flavor {
+    padding-top: 5.625rem;
+    padding-bottom: 5.625rem;
+  }
+  .flavor h1 {
+    font-size: 1.2rem;
+    margin: 0 0 1.375rem 0;
+  }
+  .flavor p {
+    font-size: 2rem;
+    padding: 0 7rem 0 7rem;
+  }
+}
+
+/* SECTION 3: IDEA */
+.idea {
+  padding-top: 1.625rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.idea h1 {
+  font-size: 0.6rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 4.9;
+  letter-spacing: 0.1125rem;
+  color: #18181d;
+  margin: 0 0 1.375rem 0;
+}
+
+.idea p {
+  font-family: Georgia;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  padding: 0 0.6rem 0 0.6rem;
+  margin-bottom: 4.1rem;
+}
+
+.idea hr {
+  border: solid 2px #18181d;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+@media (min-width: 425px) {
+  .idea {
+    padding-top: 2.625rem;
+    padding-bottom: 2.5rem;
+  }
+  .idea h1 {
+    font-size: 0.75rem;
+    margin: 0 0 1.075rem 0;
+  }
+  .idea p {
+    font-size: 1.4rem;
+    padding: 0 2.2rem 0 2.2rem;
+    margin-bottom: 4.7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .idea {
+    padding-top: 3.625rem;
+    padding-bottom: 2.5rem;
+  }
+  .idea h1 {
+    font-size: 0.9rem;
+    margin: 0 0 1.175rem 0;
+  }
+  .idea p {
+    font-size: 1.6rem;
+    padding: 0 3.8rem 0 3.8rem;
+    margin-bottom: 5.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .idea {
+    padding-top: 4.625rem;
+    padding-bottom: 2.5rem;
+  }
+  .idea h1 {
+    font-size: 1.05rem;
+    margin: 0 0 1.275rem 0;
+  }
+  .idea p {
+    font-size: 1.8rem;
+    padding: 0 5.4rem 0 5.4rem;
+    margin-bottom: 5.9rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .idea {
+    padding-top: 5.625rem;
+    padding-bottom: 2.5rem;
+  }
+  .idea h1 {
+    font-size: 1.2rem;
+    margin: 0 0 1.375rem 0;
+    margin-bottom: 6.5rem;
+  }
+  .idea p {
+    font-size: 2rem;
+    padding: 0 7rem 0 7rem;
+    margin-bottom: 6.5rem;
+  }
+}
+
+/* SECTION 4: GALLERY */
+.gallery {
+  padding-top: 2.1rem;
+  padding-bottom: 3.625rem;
+  text-align: center;
+}
+
+.gallery h1 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 4.9;
+  letter-spacing: 0.1125rem;
+  color: #18181d;
+  margin: 0 0 2.75rem 0;
+}
+
+.gallery > div img {
+  width: 100%;
+}
+
+@media (min-width: 425px) {
+  .gallery {
+    padding-top: 2.2rem;
+    padding-bottom: 4.625rem;
+  }
+  .gallery h1 {
+    font-size: 0.9rem;
+    margin: 0 0 3rem 0;
+  }
+  .gallery > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 1.1rem;
+    grid-column-gap: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    padding-top: 2.3rem;
+    padding-bottom: 5.625rem;
+  }
+  .gallery h1 {
+    font-size: 1.0rem;
+    margin: 0 0 3.25rem 0;
+  }
+  .gallery > div {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1.4rem;
+    grid-column-gap: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    padding-top: 2.4rem;
+    padding-bottom: 6.625rem;
+  }
+  .gallery h1 {
+    font-size: 1.1rem;
+    margin: 0 0 3.5rem 0;
+  }
+  .gallery > div {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1.7rem;
+    grid-column-gap: 1.7rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .gallery {
+    padding-top: 2.5rem;
+    padding-bottom: 7.625rem;
+  }
+  .gallery h1 {
+    font-size: 1.2rem;
+    margin: 0 0 3.75rem 0;
+  }
+  .gallery > div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+  }
+}
+
+/* SECTION 5: FOOTER */
+footer {
+  background-color: #18181D;
+  padding: 0.75rem 2.4rem 0.75rem 2.4rem;
+}
+
+footer p {
+  font-family: Futura;
+  font-size: 0.275rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.71;
+  letter-spacing: 0.08125rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (min-width: 425px) {
+  footer {
+    text-align: center;
+    padding: 1rem 3.6rem 1rem 3.6rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 0 3.6rem 0 3.6rem;
+  }
+  footer > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer p:first-child {
+    text-align: left;
+  }
+  footer p:last-child {
+    text-align: right;
+  }
+  footer p {
+    font-size: 0.675rem;
+    line-height: 5.71;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding: 0 4.8rem 0 4.8rem;
+  }
+  footer p {
+    font-size: 0.725rem;
+    line-height: 6.21;
+  }
+}
+
+@media (min-width: 1440px) {
+  footer {
+    padding: 0 6rem 0 6rem;
+  }
+  footer p {
+    font-size: 0.875rem;
+    line-height: 6.71;
+  }
+}
+
+
+
+@media (min-width: 425px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1440px) {
+
+}
